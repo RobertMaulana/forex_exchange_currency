@@ -32,8 +32,8 @@ class App extends React.Component {
         this.fetchCurrencies()
     }
 
-    fetchCurrencies() {
-        fetch(getCurrenciesUrl)
+    async fetchCurrencies() {
+        await fetch(getCurrenciesUrl)
             .then(response => response.json())
             .then(data => this.setState({data}))
     }
