@@ -1,4 +1,7 @@
-const CurrDictionary = curr => {
+const CurrDictionary = (curr = '') => {
+    if (curr === '') {
+        return 'Currency not found'
+    }
     const data = {
         "BGN": "Bulgarian Lev",
         "CAD": "Canadian Dollar",
