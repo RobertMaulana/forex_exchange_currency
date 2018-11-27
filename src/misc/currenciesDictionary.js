@@ -1,5 +1,5 @@
 const CurrDictionary = (curr = '') => {
-    if (curr === '') {
+    if (curr === '' || curr === null || curr === undefined) {
         return 'Currency not found'
     }
     const data = {

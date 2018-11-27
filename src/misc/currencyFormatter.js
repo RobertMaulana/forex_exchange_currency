@@ -1,5 +1,5 @@
 const formatter = (curr = '') => {
-    if (typeof curr !== 'number' || curr === '') {
+    if (typeof curr !== 'number' || curr === '' || curr === null || curr === undefined) {
         return 'NA'
     }
     const round = Math.round(curr * 1000) / 1000
